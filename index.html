@@ -10,9 +10,37 @@
     <title>TITLE</title>
 </head>
     <body>
-        <header>
+        <header class ="nav">
+            <div>Home</div>
+            <div>About Maria Thun</div>
+            <div>Biodynamics explained</div>
+            <div>Plan your own garden!</div>
         </header>
         <main id="main">
+        <p>The Moon Phase for today:</p>
+        <p id="results"></p>
+            <form class="formM">
+                <label>
+                    <input type="text" placeholder="City ZIP Code" />
+                    <input type="submit" value="Get Moon Info" />
+                </label>
+            </form>
+        <p>To receive the zodiac symbol, insert today's Month and Date</p>
+        <form class="formZ">
+            <p id="resultsZ"></p>
+            <label>
+                <input class="date" type="text" placeholder="Month Date" />
+                <input type="submit" value="Get Zodiac Recommendation" /> 
+            </label>
+        </form>
+        </main>
+        <footer>
+          <div class="footer"><p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p></div>  
+        </footer>
+    </body>
+</html>
+
+
             <!-- the DIV that will contain the widget
 <div class="weatherWidget" ></div>
 
@@ -36,25 +64,3 @@
    (d.head || d.body).appendChild(s);
    })();
 </script> -->
-        <p>The Moon Phase for today:</p>
-        <p id="results"></p>
-            <form class="formM">
-                <label>
-                    <input type="text" placeholder="City ZIP Code" />
-                    <input type="submit" value="Get Moon Info" />
-                </label>
-            </form>
-        <p>To receive the zodiac symbol, insert today's Month and Date</p>
-        <form class="formZ">
-            <p id="resultsZ"></p>
-            <label>
-                <input class="date" type="text" placeholder="Month Date" />
-                <input type="submit" value="Get Zodiac Recommendation" /> 
-            </label>
-        </form>
-        </main>
-        <footer>
-            <p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p>
-        </footer>
-    </body>
-</html>

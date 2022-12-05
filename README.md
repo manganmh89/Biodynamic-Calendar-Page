@@ -1,7 +1,7 @@
 # Maria Thun Calendar
 
 ## Description
-This app will all user's to collect exact moon phase and zodiac information pertenant to biodynamic gardening. With the simple use of this calculator, home gardeners can harness the power of biodynamic practices in their very own yard!
+This app will all user's to collect the current 
 
 ## Technologies Used
 - HTML5
