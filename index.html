@@ -16,26 +16,36 @@
             <div>Biodynamics explained</div>
             <div>Plan your own garden!</div>
         </header>
+        <div class="instructions">
+            <ol>How to use this calculator
+                <li>Enter ZIP code for location desired. Click "Submit"</li>
+                <li>Enter Month and Day for the Zodiac month. No comma necessary - Month Date. Click "Submit"</li>
+                <li>Compare your data with the listed recommendations!</li>
+            </ol>
+        </div>
         <main id="main">
-        <p>The Moon Phase for today:</p>
-        <p id="results"></p>
+            <p>The Moon Phase for today:</p>
+            <p id="results"><img id="moonSvg" src="https://freesvg.org/img/Full-Moon-Luc-Viatour-by-Merlin2525.png"></p>
             <form class="formM">
                 <label>
                     <input type="text" placeholder="City ZIP Code" />
-                    <input type="submit" value="Get Moon Info" />
+                    <input type="submit" value="Submit" />
                 </label>
             </form>
-        <p>To receive the zodiac symbol, insert today's Month and Date</p>
-        <form class="formZ">
-            <p id="resultsZ"></p>
-            <label>
-                <input class="date" type="text" placeholder="Month Date" />
-                <input type="submit" value="Get Zodiac Recommendation" /> 
-            </label>
-        </form>
+                <p>The zodiac symbol for today, enter Month and Date</p>
+            <form class="formZ">
+                <p id="resultsZ"></p>
+                <label>
+                    <input class="date" type="text" placeholder="Month Date" />
+                    <input type="submit" value="Submit" /> 
+                </label>
+             </form>
         </main>
+        <div class="recommendation">
+            <p>Based on the results of this app, you can now compare to the chart on the right!</p>
+        </div>
         <footer>
-          <div class="footer"><p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p></div>  
+          <p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p> 
         </footer>
     </body>
 </html>
