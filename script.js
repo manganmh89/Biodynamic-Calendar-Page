@@ -2,23 +2,32 @@
 // ELEMENTS REF'D / CACHED ELEMENTS
 // ///////////
 const $results = $('#results')
-const $form = $('form')
+const $resultsZ = $('#resultsZ')
+const $formM = $('.formM')
+const $formZ = $('.formZ')
 const $input = $( 'input[type="text"]' )
-const settingsHoro = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today",
-	"method": "POST",
-	"headers": {
-		"X-RapidAPI-Key": "da353fbf31msh3c8607d771df738p1e4c6ejsnaa9680fc2b37",
-		"X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com"
-	}
-}
+const $inputZ = $('.date')
+let zodiacObject
+// const settingsHoro = {
+// 	"async": true,
+// 	"crossDomain": true,
+// 	"url": "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today",
+// 	"method": "POST",
+// 	"headers": {
+// 		"X-RapidAPI-Key": "da353fbf31msh3c8607d771df738p1e4c6ejsnaa9680fc2b37",
+// 		"X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com"
+// 	}
+// }
 
 ///////////
 // EVENT LISTENERS
 ///////////
-$form.on('submit', handleGetData)
+$formM.on('submit', handleGetData)
+
+$formZ.on('submit', function(event){
+    event.preventDefault();
+    handleGetZodiac(event);
+})
 ///////////
 // FUNCTIONS
 ///////////
@@ -37,12 +46,12 @@ function handleGetData(event) {
         $results.text(phaseName(data.currentConditions.moonphase));
     });
     // console.log(settingsHoro);
-    $.ajax(settingsHoro).then(response => {
-        console.log(response);
-        $results.text()
-    },error =>{
-        console.log(error)
-    });
+    // $.ajax(settingsHoro).then(response => {
+    //     console.log(response);
+    //     $results.text()
+    // },error =>{
+    //     console.log(error)
+    // });
 }
 function phaseName (inp) {
 
@@ -75,29 +84,35 @@ function phaseName (inp) {
         }
 };
 
-const zodiacObject = 
-{
-    Gemini: {
-        months: [
-        {
-        month: 'September'
-        dayStart: 1,
-        dayEnd: 2,
-        },
-        {
-            month:
-            dayStart:
-            dayEnd:
+function handleGetZodiac (event) {
+    event.preventDefault();
+    var test = $inputZ.val().split(" ")
+    console.log(test)
+    var month = test[0]
+    var day = test[1]
+    console.log(month,day)
+
+    for (let zodiac in zodiacObject) {
+        zodiacObject[zodiac].month.forEach(montheElement => {
+            if (month == montheElement.month && day >= montheElement.dayStart && day <= montheElement.dayEnd) {
+                console.log('This Current Zodiac Month is ' + zodiac + "!");
+                $resultsZ.text(zodiac);
+                return;
+            } else {
+                console.log('This is not an accurate date!');
+            }
+        })
+    }
+};
+
+function loadZodiacData () {
+    $.ajax({
+        url: './zodiac-data.json',
+        dataType:'json',
+        async: false,
+        success: data => {
+            zodiacObject = data;
         }
-    ]
-}
-var month = 
-var day = 
-for (zodiac in zodiacObject) {
-zodiacObject[zodiac].months.forEach(montheElement => {
-    if month == montheElement.month && day >= montheElement.dayStart && day <= montheElement.dayEnd){
-        console.log('This is the Current Zodiac Month');
-    } else (
-console.log('this is not');
-        )
-}};
+    })
+};
+loadZodiacData();
