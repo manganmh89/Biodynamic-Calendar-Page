@@ -1,16 +1,19 @@
 ///////////
 // ELEMENTS REF'D / CACHED ELEMENTS
 // ///////////
-// const $title = $( '#title' )
-// const $for = $( '#for' )
-// const $temperature = $( '#temperature' )
-// const $feels = $( '#feels' )
-// const $weather = $( '#weather' )
-// const $main = $( 'main')
 const $results = $('#results')
 const $form = $('form')
 const $input = $( 'input[type="text"]' )
-//const URL = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${($input.val())}?unitGroup=us&key=K4CKEF7AFMK69N9VWWMWYDTPG&contentType=json`;
+const settingsHoro = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today",
+	"method": "POST",
+	"headers": {
+		"X-RapidAPI-Key": "da353fbf31msh3c8607d771df738p1e4c6ejsnaa9680fc2b37",
+		"X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com"
+	}
+}
 
 ///////////
 // EVENT LISTENERS
@@ -33,35 +36,68 @@ function handleGetData(event) {
         console.log( data );
         $results.text(phaseName(data.currentConditions.moonphase));
     });
+    // console.log(settingsHoro);
+    $.ajax(settingsHoro).then(response => {
+        console.log(response);
+        $results.text()
+    },error =>{
+        console.log(error)
+    });
 }
 function phaseName (inp) {
 
         if (inp === 0) {
-            return "new moon"
+            return "New Moon"
         }
         else if (inp < 0.25){
-            return "waxing crescent"	
+            return "Waxing Crescent"	
         } 
         else if (inp === 0.25){
-            return "first quarter"
+            return "First Quarter"
         }
         else if (inp < 0.5){
-            return "waxing gibbous"
+            return "Waxing Gibbous"
         }
         else if (inp === 0.5){
-            return "full moon"
+            return "Full Moon"
         }
         else if (inp < 0.75){
-            return "waning gibbous"
+            return "Waning Gibbous"
         }
         else if (inp ===0.75){
-            return "last quarter"
+            return "Last Quarter"
         }
         else if (inp < 1){
-            return "waning crescent"
+            return "Waning Crescent"
         }
         else if (inp === 1){
-            return "full moon"
+            return "Full Moon"
         }
 };
 
+const zodiacObject = 
+{
+    Gemini: {
+        months: [
+        {
+        month: 'September'
+        dayStart: 1,
+        dayEnd: 2,
+        },
+        {
+            month:
+            dayStart:
+            dayEnd:
+        }
+    ]
+}
+var month = 
+var day = 
+for (zodiac in zodiacObject) {
+zodiacObject[zodiac].months.forEach(montheElement => {
+    if month == montheElement.month && day >= montheElement.dayStart && day <= montheElement.dayEnd){
+        console.log('This is the Current Zodiac Month');
+    } else (
+console.log('this is not');
+        )
+}};
