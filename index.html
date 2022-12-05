@@ -13,6 +13,37 @@
         <header>
         </header>
         <main>
+            <!-- the DIV that will contain the widget
+<div class="weatherWidget" ></div>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"K4CKEF7AFMK69N9VWWMWYDTPG", //Sign up for your personal key
+       location:"", //Enter an address
+       unitGroup:"us", //"us" or "metric"
+       forecastDays:5, //how many days forecast to show
+       title:"", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script> -->
+<form>
+    <label>
+        <p>The moon phase for today is: </p>
+        <div id = "results"></div>
+        <input type="text" placeholder="City ZIP Code" />
+        <input type="submit" value="Get Moon Info" />
+    </label>
+</form>
         </main>
         <footer>
         <p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p>
