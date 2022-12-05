@@ -1,17 +1,170 @@
 {
-    "Gemini": {
+    "Aries": {
         "month": [
             {
-                "month":
-                "dayStart":
-                "dayEnd":
+                "month": "March",
+                "dayStart": 21,
+                "dayEnd": 31
             },
             {
-                "month":
-                "dayStart":
-                "dayEnd":
+                "month": "April",
+                "dayStart": 1,
+                "dayEnd": 19
             }
         ]
     },
-    
+    "Taurus": {
+        "month": [
+            {
+                "month": "April",
+                "dayStart": 20,
+                "dayEnd": 30
+            },
+            {
+                "month": "May",
+                "dayStart": 1,
+                "dayEnd": 20
+            }
+        ]
+    },
+    "Gemini": {
+        "month": [
+            {
+                "month": "May",
+                "dayStart": 21,
+                "dayEnd": 31
+            },
+            {
+                "month": "June",
+                "dayStart": 1,
+                "dayEnd": 20
+            }
+        ]
+    },
+    "Cancer": {
+        "month": [
+            {
+                "month": "June",
+                "dayStart": 21,
+                "dayEnd": 30
+            },
+            {
+                "month": "July",
+                "dayStart": 1,
+                "dayEnd": 22
+            }
+        ]
+    },
+    "Leo": {
+        "month": [
+            {
+                "month": "July",
+                "dayStart": 23,
+                "dayEnd": 31
+            },
+            {
+                "month": "August",
+                "dayStart": 1,
+                "dayEnd": 22
+            }
+        ]
+    },
+    "Virgo": {
+        "month": [
+            {
+                "month": "August",
+                "dayStart": 23,
+                "dayEnd": 31
+            },
+            {
+                "month": "September",
+                "dayStart": 1,
+                "dayEnd": 22
+            }
+        ]
+    },
+    "Libra": {
+        "month": [
+            {
+                "month": "September",
+                "dayStart": 23,
+                "dayEnd": 30
+            },
+            {
+                "month": "October",
+                "dayStart": 1,
+                "dayEnd": 22
+            }
+        ]
+    },
+    "Scorpio": {
+        "month": [
+            {
+                "month": "October",
+                "dayStart": 23,
+                "dayEnd": 30
+            },
+            {
+                "month": "November",
+                "dayStart": 1,
+                "dayEnd": 21
+            }
+        ]
+    },
+    "Sagittarius": {
+        "month": [
+            {
+                "month": "November",
+                "dayStart": 22,
+                "dayEnd": 31
+            },
+            {
+                "month": "December",
+                "dayStart": 1,
+                "dayEnd": 21
+            }
+        ]
+    },
+    "Capicorn": {
+        "month": [
+            {
+                "month": "December",
+                "dayStart": 22,
+                "dayEnd": 31
+            },
+            {
+                "month": "January",
+                "dayStart": 1,
+                "dayEnd": 19
+            }
+        ]
+    },
+    "Aquarius": {
+        "month": [
+            {
+                "month": "January",
+                "dayStart": 20,
+                "dayEnd": 31
+            },
+            {
+                "month": "February",
+                "dayStart": 1,
+                "dayEnd": 18
+            }
+        ]
+    },
+    "Pisces": {
+        "month": [
+            {
+                "month": "February",
+                "dayStart": 19,
+                "dayEnd": 28
+            },
+            {
+                "month": "March",
+                "dayStart": 1,
+                "dayEnd": 20
+            }
+        ]
+    }
 }
