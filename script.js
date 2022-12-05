@@ -31,34 +31,37 @@ function handleGetData(event) {
 
     $.ajax( URL ).then( ( data ) => {
         console.log( data );
-        $results.text(data.currentConditions.moonPhase);
-        
-        // if (data.currentConditions.moonPhase === 0) {
-        //     data.currentConditions.moonPhase ="new moon"
-        // }
-        // else if (data.currentConditions.moonPhase < 0.25){
-        //     data.currentConditions.moonPhase ="waxing crescent"	
-        // } 
-        // else if (data.currentConditions.moonPhase === 0.25){
-        //     data.currentConditions.moonPhase ="first quarter"
-        // }
-        // else if (data.currentConditions.moonPhase < 0.5){
-        //     data.currentConditions.moonPhase ="waxing gibbous"
-        // }
-        // else if (data.currentConditions.moonPhase === 0.5){
-        //     data.currentConditions.moonPhase ="full moon"
-        // }
-        // else if (data.currentConditions.moonPhase < 0.75){
-        //     data.currentConditions.moonPhase ="waning gibbous"
-        // }
-        // else if (data.currentConditions.moonPhase ===0.75){
-        //     data.currentConditions.moonPhase ="last quarter"
-        // }
-        // else if (data.currentConditions.moonPhase < 1){
-        //     data.currentConditions.moonPhase ="waning crescent"
-        // }
-        // else if (data.currentConditions.moonPhase === 1){
-        //     data.currentConditions.moonPhase ="full moon"
-        // }
-    })
+        $results.text(phaseName(data.currentConditions.moonphase));
+    });
 }
+function phaseName (inp) {
+
+        if (inp === 0) {
+            return "new moon"
+        }
+        else if (inp < 0.25){
+            return "waxing crescent"	
+        } 
+        else if (inp === 0.25){
+            return "first quarter"
+        }
+        else if (inp < 0.5){
+            return "waxing gibbous"
+        }
+        else if (inp === 0.5){
+            return "full moon"
+        }
+        else if (inp < 0.75){
+            return "waning gibbous"
+        }
+        else if (inp ===0.75){
+            return "last quarter"
+        }
+        else if (inp < 1){
+            return "waning crescent"
+        }
+        else if (inp === 1){
+            return "full moon"
+        }
+};
+

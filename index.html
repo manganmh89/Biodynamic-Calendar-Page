@@ -12,7 +12,7 @@
     <body>
         <header>
         </header>
-        <main>
+        <main id="main">
             <!-- the DIV that will contain the widget
 <div class="weatherWidget" ></div>
 
@@ -22,8 +22,8 @@
        selector:".weatherWidget",
        apiKey:"K4CKEF7AFMK69N9VWWMWYDTPG", //Sign up for your personal key
        location:"", //Enter an address
-       unitGroup:"us", //"us" or "metric"
-       forecastDays:5, //how many days forecast to show
+       unitGroup:"us"
+       forecastDays:5
        title:"", //optional title to show in the 
        showTitle:true, 
        showConditions:true
@@ -36,17 +36,17 @@
    (d.head || d.body).appendChild(s);
    })();
 </script> -->
-<form>
-    <label>
-        <p>The moon phase for today is: </p>
-        <div id = "results"></div>
-        <input type="text" placeholder="City ZIP Code" />
-        <input type="submit" value="Get Moon Info" />
-    </label>
-</form>
+        <p>The Moon Phase for today:</p>
+        <p id="results"></p>
+            <form>
+                <label>
+                    <input type="text" placeholder="City ZIP Code" />
+                    <input type="submit" value="Get Moon Info" />
+                </label>
+            </form>
         </main>
         <footer>
-        <p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p>
+            <p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p>
         </footer>
     </body>
 </html>
