@@ -22,3 +22,4 @@ This app will all user's to collect the current moon phase for their ZIP code as
 - Allow users to store home garden data. 
 - Integrating the recommendation with hardiness zones.
 - Integrate results with customized recommendation.
+- Integrating ascending/descending data points for accuracy. 

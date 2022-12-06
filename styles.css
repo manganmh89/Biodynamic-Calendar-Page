@@ -8,15 +8,21 @@ body {
     "footer footer footer";
     height: 100vh;
     margin: 0;
-    grid-gap: 5px;
+    grid-gap: 2px;
     font-family: Helvetica;
+    align-content: center;
+    
 }
+
 #main {
     grid-area: main;
     align-content:center;
     justify-content: center;
     background-color: blanchedalmond;
-    margin: 10px;
+    margin: 5px;
+    align-items: center;
+    height: 100%;
+   
 }
 
 .instructions {
@@ -28,8 +34,9 @@ body {
 
 .recommendation {
     grid-area: recommendation;
-    background-color: rgb(15, 143, 186);
+    background-color: rgb(48, 176, 218);
     margin: 10px;
+    align-items:center;
 }
 
 .nav {
@@ -50,10 +57,6 @@ body {
 
 footer {
     grid-area: footer;
-    /* align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%; */
-    background-color: rgba(3, 183, 183, 0.391);
+    background-color: rgba(224, 128, 87, 0.391);
     margin: 10px;
 }
