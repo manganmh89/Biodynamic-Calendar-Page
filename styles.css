@@ -4,7 +4,7 @@ body {
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: 
     "nav nav nav"
-    "instructions main recommendations"
+    "instructions main recommendation"
     "footer footer footer";
     height: 100vh;
     margin: 0;
@@ -26,9 +26,10 @@ body {
     margin: 10px;
 }
 
-.recommendations {
-    grid-area: recommendations;
-    background-color: rgb(58, 184, 226);
+.recommendation {
+    grid-area: recommendation;
+    background-color: rgb(15, 143, 186);
+    margin: 10px;
 }
 
 .nav {
