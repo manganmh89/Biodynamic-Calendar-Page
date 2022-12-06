@@ -7,37 +7,42 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script defer src="script.js"></script>
-    <title>TITLE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Biodynamic Calendar Calculator</title>
 </head>
     <body>
         <header class ="nav">
             <div>Home</div>
-            <div>About Maria Thun</div>
-            <div>Biodynamics explained</div>
-            <div>Plan your own garden!</div>
+            <div><a href="https://www.florisbooks.co.uk/authors/maria-thun.php">About Maria Thun</a></div>
+            <div><a href="https://www.biodynamics.com/what-is-biodynamics">Biodynamics explained</a></div>
+            <div><a href="https://gardenplanner.almanac.com/">Plan your own garden!</a></div>
         </header>
         <div class="instructions">
-            <ol>How to use this calculator
+            <ol><h1>How to use this calculator</h1>
                 <li>Enter ZIP code for location desired. Click "Submit"</li>
                 <li>Enter Month and Day for the Zodiac month. No comma necessary - Month Date. Click "Submit"</li>
                 <li>Compare your data with the listed recommendations!</li>
             </ol>
-            <ul>Zodiac symbol conversion</ul>
-                <li>Aries - Ram</li>
-                <li>Taurus - Bull</li>
-                <li>Gemini - Twins</li>
-                <li>Cancer - Crab</li>
-                <li>Leo - Lion</li>
-                <li>Virgo - Virgin</li>
-                <li>Libra - Balance</li>
-                <li>Scorpio - Scorpion</li>
-                <li>Sagittarius - Archer</li>
-                <li>Capicorn - Goat </li>
-                <li>Aquarius - Waterman</li>
-                <li>Pisces - Fish</li>
+            <div class="conversion"><h1>Zodiac symbol conversion</h1>
+                <p>Aries - Ram</p>
+                <p>Taurus - Bull</p>
+                <p>Gemini - Twins</p>
+                <p>Cancer - Crab</p>
+                <p>Leo - Lion</p>
+                <p>Virgo - Virgin</p>
+                <p>Libra - Balance</p>
+                <p>Scorpio - Scorpion</p>
+                <p>Sagittarius - Archer</p>
+                <p>Capicorn - Goat</p>
+                <p>Aquarius - Waterman</p>
+                <p>Pisces - Fish</p>
+            </div>
+            <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/6P6KvfJGLCUKYLuPJK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p>
         </div>
         <main id="main">
-            <p>The Moon Phase for today:</p>
+            <p><h2>The Moon Phase for today:</h2></p>
             <p id="results"><img id="moonSvg" src="https://freesvg.org/img/Full-Moon-Luc-Viatour-by-Merlin2525.png"></p>
             <form class="formM">
                 <label>
@@ -49,49 +54,31 @@
             <form class="formZ">
                 <p id="resultsZ"></p>
                 <label>
-                    <input class="date" type="text" placeholder="Month Date" />
+                    <input class="date" type="text" placeholder="Month & Day" />
                     <input type="submit" value="Submit" /> 
                 </label>
-                <img id="moonPhases" src="">
+                <br>
+                <img id="moonPhases" src="https://spaceplace.nasa.gov/review/moon-phases/moon-phases.en.png">
             </form>
+            <div id="decipher"><h3><u>Deciphering between Waning and Waxing moons...</u></h3>
+                <p>Waxing Moon: During this phase the earth is “exhaling” or "ascending" and releasing. The growing energies are drawn into the upper plant.
+                    It is time to sow plants intended for their characteristics above ground, such as shrubs, trees, and flowering plants.</p>
+                <p>Waning Moon: During this phase the earth is "inhaling" or "descending" and absorbing. The growing energy is pulled down towards the roots.
+                    This is the time to water, or use natural fertilizers which will be well absorbed by soil and into the plant. This is the time to be weeding! </p>
+                <p>Using the zodiac month will help determine which type of plants to sow or harvest in accordance with the moon cycle.</p>
+            <p><b><h3>For example:</h3></b> If it was a Waxing Gibbous in the month of Scorpio, I might consider <b>SOWING</b> a <b>LEAF</b> plant, such as spinach.</p>
+            </div>
         </main>
         <div class="recommendation">
-            <p>Based on the results of this app, you can now compare to the chart!</p>
+            <p><h3>Now compare with the chart below!</h3></p>
             <img id ="calendar" src="http://biodistretto.net/wp-content/uploads/2016/12/M1_S1_fig_1.png">
-            <p><ul class ="formation">
-                <li>With the Moon in the signs of the earth element (<b>Capricorn, Virgo and Taurus</b>), the formation of roots was facilitated.</li>
-                <li>With the Moon in the signs of the water element (<b>Pisces, Cancer and Scorpio</b>), the formation of leaves was facilitated</li>
-                <li>With the Moon in the signs of the air element (<b>Gemini, Libra and Aquarius</b>), the formation of flowers was facilitated.</li>
-                <li>And with the Moon in the signs of the element of fire (<b>Aries, Leo and Sagittarius</b>), fruit formation was facilitated.</li>
-            </ul></p>
+            <p>With the Moon in the signs of the earth element (<b>Capricorn, Virgo and Taurus</b>), the formation of roots was facilitated.(Think of carrots, garlic, onion)</p>
+            <p>With the Moon in the signs of the water element (<b>Pisces, Cancer and Scorpio</b>), the formation of leaves was facilitated.(Think of spinach, cabbage, herbs)</p>
+            <p>With the Moon in the signs of the air element (<b>Gemini, Libra and Aquarius</b>), the formation of flowers was facilitated.(Think chamomile, lilac, or ornamental flowers)</li>
+            <p>With the Moon in the signs of the fire element (<b>Aries, Leo and Sagittarius</b>), fruit formation was facilitated.(Think of tomatoes, beans, peppers)</p>
         </div>
         <footer>
-          <p>Copyright &copy; All Rights Reserved 2022 MT Calendar App</p> 
+          <p>Copyright &copy; All Rights Reserved 2022 Biodynamic Calculator App</p> 
         </footer>
     </body>
 </html>
-
-
-            <!-- the DIV that will contain the widget
-<div class="weatherWidget" ></div>
-
-<script>
-   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-   window.weatherWidgetConfig.push({
-       selector:".weatherWidget",
-       apiKey:"K4CKEF7AFMK69N9VWWMWYDTPG", //Sign up for your personal key
-       location:"", //Enter an address
-       unitGroup:"us"
-       forecastDays:5
-       title:"", //optional title to show in the 
-       showTitle:true, 
-       showConditions:true
-   });
-  
-   (function() {
-   var d = document, s = d.createElement('script');
-   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-   })();
-</script> -->

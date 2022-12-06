@@ -6,37 +6,47 @@ body {
     "nav nav nav"
     "instructions main recommendation"
     "footer footer footer";
-    height: 100vh;
-    margin: 0;
+    /* height: 80vh; */
+    margin: auto;
     grid-gap: 2px;
-    font-family: Helvetica;
+    font-family: "Gentium Plus";
     align-content: center;
+    background-color:#edca82;
     
-}
-
-#main {
-    grid-area: main;
-    align-content:center;
-    justify-content: center;
-    background-color: blanchedalmond;
-    margin: 5px;
-    align-items: center;
-    height: 100%;
-   
 }
 
 .instructions {
     grid-area: instructions;
+    background-color:#a9c0a6;
+    margin: 5px;
     align-items: center;
-    background-color:rgb(136, 206, 234);
-    margin: 10px;
+    justify-items: center;
+    height: 100%
+    color: #084843;
+}
+
+#main {
+    grid-area: main;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    background-color: #097770;
+    color:#beebe8;
+    text-align: center;
 }
 
 .recommendation {
     grid-area: recommendation;
-    background-color: rgb(48, 176, 218);
-    margin: 10px;
+    background-color: #e0cdbe;
+    margin: 5px;
     align-items:center;
+    justify-items: center;
+    height: 100%;
+    color: #084843;
+    text-align: center;
 }
 
 .nav {
@@ -45,9 +55,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     height: 50px;
-    background-color: peachpuff;
-    margin: 10px;
+    background-color: #edca82;
+    margin: 5px;
     align-items: center;
+    color: #084843;
 }
 
 #moonSvg {
@@ -57,6 +68,30 @@ body {
 
 footer {
     grid-area: footer;
-    background-color: rgba(224, 128, 87, 0.391);
+    background-color: #edca82;
+    margin: 2px;
+    align-items: center;
+    justify-items: center;
+    color: #084843;
+}
+
+#moonPhases {
+    height: 14rem;
+    width: 29rem;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 2px 20px 2px;
+}
+.instructions > .conversion {
+    justify-content: center;
+    align-content: center;
+}
+.conversion {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.decipher {
+    text-align: left;
     margin: 10px;
 }
