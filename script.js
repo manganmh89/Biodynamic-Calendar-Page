@@ -1,37 +1,20 @@
-///////////
-// ELEMENTS REF'D / CACHED ELEMENTS
-// ///////////
+
+// ELEMENTS REF'D
 const $results = $('#results')
 const $resultsZ = $('#resultsZ')
 const $formM = $('.formM')
 const $formZ = $('.formZ')
 const $input = $( 'input[type="text"]' )
 const $inputZ = $('.date')
-let zodiacObject
-// const settingsHoro = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today",
-// 	"method": "POST",
-// 	"headers": {
-// 		"X-RapidAPI-Key": "da353fbf31msh3c8607d771df738p1e4c6ejsnaa9680fc2b37",
-// 		"X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com"
-// 	}
-// }
 
-///////////
 // EVENT LISTENERS
-///////////
 $formM.on('submit', handleGetData)
-
 $formZ.on('submit', function(event){
     event.preventDefault();
     handleGetZodiac(event);
 })
-///////////
-// FUNCTIONS
-///////////
 
+// FUNCTIONS
 function handleGetData(event) {
     console.log($input.val())
     const URL = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${($input.val())}?key=K4CKEF7AFMK69N9VWWMWYDTPG`;
@@ -45,14 +28,8 @@ function handleGetData(event) {
         console.log( data );
         $results.text(phaseName(data.currentConditions.moonphase));
     });
-    // console.log(settingsHoro);
-    // $.ajax(settingsHoro).then(response => {
-    //     console.log(response);
-    //     $results.text()
-    // },error =>{
-    //     console.log(error)
-    // });
 }
+//try to convert into a switch statement!
 function phaseName (inp) {
 
         if (inp === 0) {
