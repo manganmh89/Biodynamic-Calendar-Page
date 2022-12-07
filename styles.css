@@ -78,6 +78,8 @@ footer {
     align-items: center;
     justify-items: center;
     color: #084843;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #moonPhases {
