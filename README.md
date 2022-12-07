@@ -12,10 +12,10 @@ This app will all user's to collect the current moon phase for their ZIP code as
 
 ## Screenshots
 ![wireframe](./images/wireframe-ss.png)
-![production version](./images/deployed-ss.png)
+![production version](./images/deployed-ss2.png)
 
 ## Getting Started
-[Click here] (#) to visit the deployed app!
+[Click here](https://manganmh89.github.io/Biodynamic-Calendar-Page/) to visit the deployed app!
 
 ## Future Enhancements
 - Allow users to make an account.
