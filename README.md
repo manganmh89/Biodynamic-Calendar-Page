@@ -12,7 +12,7 @@ This app will all user's to collect the current moon phase for their ZIP code as
 
 ## Screenshots
 ![wireframe](./images/wireframe-ss.png)
-![production version](./images/app-screenshot.png)
+![production version](./images/deployed-ss.png)
 
 ## Getting Started
 [Click here] (#) to visit the deployed app!

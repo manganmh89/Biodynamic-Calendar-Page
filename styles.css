@@ -18,22 +18,25 @@ body {
 .instructions {
     grid-area: instructions;
     background-color:#a9c0a6;
-    margin: 5px;
+    margin: 10px;
     align-items: center;
-    justify-items: center;
+    justify-items: left;
+    /* align-content: ;
+    justify-content: ; */
     height: 100%;
     color: #084843;
+    text-align: left;
 }
 
 #main {
     grid-area: main;
-    align-content: center;
-    justify-content: center;
+    background-color: #097770;
     margin: 5px;
     align-items: center;
     justify-items: center;
+    align-content: center;
+    justify-content: center;
     height: 100%;
-    background-color: #097770;
     color:#beebe8;
     text-align: center;
 }
@@ -44,6 +47,8 @@ body {
     margin: 5px;
     align-items:center;
     justify-items: center;
+    align-content:center;
+    justify-content: center;
     height: 100%;
     color: #084843;
     text-align: center;
@@ -54,7 +59,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height:2px;
+    height: 5px;
     background-color: #edca82;
     margin: 5px;
     align-items: center;
@@ -82,23 +87,26 @@ footer {
     justify-items: center;
     margin: 20px 2px 20px 2px;
 }
-.instructions > .conversion {
-    justify-content: center;
-    align-content: center;
-}
+
 .conversion {
     align-content: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    margin: 10px;
 }
+
 .decipher {
     text-align: left;
     margin: 10px;
 }
-/* #veggies {
-    height: 2rem;
-    width: 2rem;
-} */
+.plot {
+    height: 14rem;
+    width: 29rem;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 2px 20px 2px;
+}
+
 @media only screen and (min-width: 768px) {
     body {
       grid-template-columns: 1fr 1fr 1fr;
