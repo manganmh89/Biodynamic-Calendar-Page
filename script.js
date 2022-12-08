@@ -29,7 +29,7 @@ function handleGetData(event) {
         $results.text(phaseName(data.currentConditions.moonphase));
     });
 }
-//try to convert into a switch statement!
+
 function phaseName (inp) {
 
         if (inp === 0) {
@@ -60,6 +60,21 @@ function phaseName (inp) {
             return "Full Moon"
         }
 };
+//Reviewed switch statement to replace above code. 
+//Concerns regarding how to list the case/expression because of date ranges -- not just a month. Does not align with traditional month dates. 
+//MDN examples demonstrate one item e.g. Cherries - $0.49, where as Scorpio could have values (like the price) in two item categories (month). 
+// const expr = $(input.val())
+// switch (expr) {
+// case 'November':
+// console.log('The current zodiac symbole is Scorpio');
+// break;
+// case 'December':
+// console.log('The current zodiac symbol is Sagittarius');
+// break;
+// default:
+// console.log('Sorry that is not an accurate date range');
+// }
+
 
 function handleGetZodiac (event) {
     event.preventDefault();
